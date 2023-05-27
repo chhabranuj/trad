@@ -1,0 +1,152 @@
+.helpPreviewParent {
+    width: 100%;
+    display: flex;
+    color: #333333;
+    padding: 5rem 0;
+    align-items: center;
+    background-color: #f8f5ff;
+    justify-content: space-between;
+    min-height: calc(100vh - 20rem);
+}
+
+.helpPreviewLeftContainer {
+    display: flex;
+    margin-left: 5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 5rem);
+}
+
+.helpPreviewHeading {
+    margin: 0;
+    color: #362465;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.helpPreviewSubHeading {
+    color: #7e87bf;
+    font-size: medium;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.visitHelpParent {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.visithelpIcon {
+    font-size: 4rem;
+    color: #9467fe;
+    margin-right: 4rem;
+}
+
+.visitHelpTagline {
+    color: #362465;
+    font-size: x-large;
+}
+
+.visitHelpLink {
+    cursor: pointer;
+    color: #7e87bf;
+    font-size: large;
+}
+
+.visitHelpLink:hover {
+    color: #9467fe;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.helpPreviewRightContainer {
+    width: 50%;
+    display: flex;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpPreviewImage {
+    width: 60%;
+    animation: mover 2.5s infinite  alternate;
+    -webkit-animation: mover 2.5s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5rem); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5rem); }
+}
+
+@media screen and (max-width: 1050px) {
+    .helpPreviewLeftContainer {
+        width: 45%;
+    }
+
+    .helpPreviewRightContainer {
+        width: 40%;
+    }
+
+    .helpPreviewImage {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .helpPreviewParent {
+        padding: 5rem 2rem;
+        width: calc(100% - 4rem);
+        flex-direction: column-reverse;
+    }
+
+    .helpPreviewLeftContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .helpPreviewHeading {
+        font-size: 2rem;
+    }
+
+    .helpPreviewSubHeading {
+        margin-bottom: 1.5rem;
+    }
+
+    .visitHelpParent {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .visithelpIcon {
+        margin-right: 2rem;
+    }
+
+    .helpPreviewRightContainer {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .helpPreviewImage {
+        width: 80%;
+    }
+
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-3rem); }
+    }
+    
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-3rem); }
+    }
+}

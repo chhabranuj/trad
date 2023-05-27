@@ -1,0 +1,36 @@
+.helpParent {
+    width: 90%;
+    padding: 5rem 5%;
+    background-color: #f8f5ff;
+}
+
+.helpChild {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* max-height: 55vh;
+    overflow-y: auto; */
+    align-items: center;
+    border-radius: 2.5rem;
+    border: 1rem solid #f0eaff;
+    justify-content: space-around;
+}
+
+.helpChild::-webkit-scrollbar {
+    display: none;
+}
+
+.faqChild {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem; 
+    border-radius: 0.5rem; 
+    /* border: 1px solid #9467fe; */
+}
+
+@media screen and (max-width: 750px) {
+    .helpParent {
+        width: 95%;
+        padding: 5rem 2.5%;
+    }
+}

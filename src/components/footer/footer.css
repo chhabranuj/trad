@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Title */
+
+.footerChild {
+    width: 90%;
+    display: flex;
+    min-height: 40vh;
+    padding: 5rem 5%;
+    background-size: cover;
+    align-items: flex-start;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-image: url("../../assets/images/footerImage.png");
+}
+
+.aboutParent {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titleAndLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: 'Pacifico', cursive;
+}
+
+.title:hover {
+    color: #9467fe;
+}
+
+.disclaimer {
+    color: #7e87bf;
+    font-size: large;
+}
+
+.footerContainerParent {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footerContainer {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerMiddleContainer {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lastFooterContainer {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerContainerTitle {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.footerContainerDivider {
+    width: 4rem;
+    border: none;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1.5rem 0;
+    background-color: #9467fe;
+}
+
+.footerContainerContent {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footerMiddleContainerContent {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contentIcon {
+    font-size: large;
+    color: #7e87bf;
+    transition: all .8s;
+    margin-right: 0.5rem;
+}
+
+.footerContainerContent:hover .contentIcon {
+    color: #9467fe;
+}
+
+.middleContainerContentIcon {
+    font-size: large;
+    color: #7e87bf;
+    transition: all .8s;
+    margin-right: 0.5rem;
+}
+
+.footerMiddleContainerContent:hover .middleContainerContentIcon {
+    color: #9467fe;
+}
+
+.contentText {
+    color: #7e87bf;
+    margin: 0.75rem 0;
+    transition: all .8s;
+}
+
+.footerContainerContent:hover .contentText{
+    color: #9467fe;
+}
+
+.middleContainerText {
+    color: #7e87bf;
+    margin: 0.75rem 0;
+    transition: all .8s;
+}
+
+.footerMiddleContainerContent:hover .middleContainerText{
+    color: #9467fe;
+}
+
+.connectLogo {
+    color: #7e87bf;
+    margin-right: 0.5rem;
+}
+
+.footerContainerContent:hover .connectLogo{
+    color: #9467fe;
+}
+
+.copyRightParent {
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9467fe;
+}
+
+.copyRightText {
+    font-size: 0.85rem;
+    color: #ffffffb3;
+}
+
+@media screen and (max-width: 1000px) {
+    .footerChild {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aboutParent {
+        width: 90%;
+        align-items: center;
+    }
+
+    .footerContainerParent {
+        width: 90%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footerContainerParent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footerContainer {
+        width: 50%;
+    }
+
+    .footerMiddleContainer {
+        width: 50%;
+        align-items: flex-end;
+    }
+    
+    .footerMiddleContainerContent {
+        flex-direction: row-reverse;
+    }
+
+    .middleContainerContentIcon {
+        margin-right: 0;
+        margin-left: 0.5rem;
+        transform: rotate(180deg);
+    }
+
+    .lastFooterContainer {
+        width: 75%;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+}

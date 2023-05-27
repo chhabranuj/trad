@@ -1,0 +1,129 @@
+.getStartedParent {
+    display: flex;
+    align-items: center;
+    padding: 7.5rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 20rem);
+    background-color: #f0eaff;
+}
+
+.getStartedHeading {
+    margin: 0;
+    color: #362465;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.getStartedText {
+    color: #7e87bf;
+    line-height: 1.5;
+    font-size: medium;
+    text-align: center;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.getStartedChild {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.getStartedCardParent {
+    height: 30vh;
+    padding: 3rem;
+    display: flex;
+    transition: .5s;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: calc(32% - 6rem);
+    align-items: flex-start;
+    background-color: white;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgb(165 165 165 / 20%);
+
+}
+
+.getStartedCardParent:hover {
+    transform: translateY(-8px);
+    background-color: #362465;
+}
+
+.getStartedCardParent:hover .getStartedCardIcon {
+    transform: translateY(-0.5rem);
+}
+
+.getStartedCardIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #9467fe;
+    transition: all 0.3s ease-in-out;
+}
+
+.getStartedCardParent:hover .getStartedCardIcon {
+    background-color: #362465;
+}
+
+.getStartedCardHeading {
+    margin: 0;
+    color: #1c2e9e;
+    font-size: 1.35rem;
+}
+
+.getStartedCardParent:hover .getStartedCardHeading {
+    color: white;
+}
+
+.getStartedCardText {
+    margin: 0;
+    color: #7e87bf;
+    line-height: 1.75;
+}
+
+@media screen and (max-width: 1200px) {
+    .getStartedParent {
+        width: 90%;
+        padding: 5rem 5%;
+    }
+
+    .getStartedChild {
+        overflow: auto;
+        padding: 2rem 0;
+        display: -webkit-inline-box;
+    }
+
+    .getStartedChild::-webkit-scrollbar {
+        display: none;
+    }
+
+    .getStartedCardParent {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .getStartedParent {
+        width: 96%;
+        padding: 5rem 2%;
+    }
+
+    .getStartedChild {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .getStartedCardParent {
+        width: 75%;
+        padding: 1.5rem 2rem;
+    }
+
+    .getStartedCardText {
+        font-size: large;
+    }
+}

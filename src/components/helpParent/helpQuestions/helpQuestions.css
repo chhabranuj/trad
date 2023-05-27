@@ -1,0 +1,42 @@
+.helpQuestionsParent {
+    width: 100%;
+}
+
+.helpQuestionsChild {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helpQuestion {
+    width: 90%;
+    color: #ffffff;
+    font-size: larger;
+    transition: all 0.5s ease-in-out;
+}
+
+.helpQuestionIcon {
+    width: 10%;
+    text-align: end;
+    color: #ffffff;
+    font-size: larger;
+    transition: all 0.5s ease-in-out;
+}
+
+.helpAnswer {
+    width: 90%;
+    color: #7e87bf;
+}
+
+@media screen and (max-width: 800px) {
+    .helpQuestionsChild {
+        width: 100%;
+    }
+
+    .helpQuestion {
+        width: 80%;
+        margin-right: 10%;
+    }
+}

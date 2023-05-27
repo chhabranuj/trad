@@ -1,0 +1,81 @@
+.cryptoParent {
+    width: 90%;
+    padding: 5rem 5%;
+    background-color: #f0eaff;
+}
+
+.cryptoTitleSearchParent {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cryptoSearchParent {
+    width: 30%;
+    display: flex;
+    padding: 0.25rem;
+    padding-left: 2rem;
+    border-radius: 3rem;
+    align-items: center;
+    background-color: #362465;
+    justify-content: space-between;
+}
+
+.cryptoSearchbar {
+    width: 70%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.cryptoSearchbar::placeholder {
+    color: white;
+}
+
+.cryptoSearchButton {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: all .3s linear 0s;
+}
+
+.cryptoSearchButtonIcon {
+    color: #261355;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cryptoChild {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 55vh;
+    overflow-y: auto;
+    align-items: center;
+    border-radius: 2.5rem;
+    background-color: #f8f5ff;
+    justify-content: space-around;
+}
+
+.cryptoChild::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .cryptoSearchParent {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cryptoSearchParent {
+        width: 90%;
+    }
+}
